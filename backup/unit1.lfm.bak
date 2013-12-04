@@ -1,0 +1,115 @@
+object Form1: TForm1
+  Left = 1
+  Height = 305
+  Top = 181
+  Width = 609
+  ActiveControl = Edit1
+  Caption = 'Form1'
+  ClientHeight = 305
+  ClientWidth = 609
+  LCLVersion = '1.0.6.0'
+  object Label1: TLabel
+    Left = 30
+    Height = 16
+    Top = 51
+    Width = 81
+    Caption = 'Левая граница'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 30
+    Height = 16
+    Top = 82
+    Width = 89
+    Caption = 'Правая граница'
+    ParentColor = False
+    OnClick = Label2Click
+  end
+  object Label3: TLabel
+    Left = 30
+    Height = 16
+    Top = 112
+    Width = 53
+    Caption = 'Точность'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 156
+    Height = 1
+    Top = 143
+    Width = 1
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 156
+    Height = 23
+    Top = 40
+    Width = 80
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 156
+    Height = 23
+    Top = 73
+    Width = 80
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 156
+    Height = 23
+    Top = 106
+    Width = 80
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 30
+    Height = 25
+    Top = 137
+    Width = 96
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Memo1: TMemo
+    Left = 30
+    Height = 90
+    Top = 174
+    Width = 150
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 64
+    Height = 25
+    Top = 272
+    Width = 84
+    Caption = 'Очистить'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object Chart1: TChart
+    Left = 280
+    Height = 200
+    Top = 16
+    Width = 300
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    ParentColor = False
+    object Chart1LineSeries1: TLineSeries
+    end
+  end
+end
